@@ -1,0 +1,70 @@
+.converter_block {
+    width: 100%;
+    margin: 1%;
+}
+
+.block_input_elements{
+  width: 80%;
+  display: inline-block;
+}
+
+h1{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+input, select{
+  margin: 0 1% 0 1%;
+}
+
+.tabs { width: 36%; padding: 0px; margin: 0 auto; }
+.tabs>input { display:none; }
+.tabs>div, #range {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: none;
+    padding: 12px;
+    border: 1px solid #000000;
+    background: #e6f2ff;
+}
+#speed {
+    background: #99ff99;
+}
+#temperature {
+    background: #ff9999
+}
+.tabs>label {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 -5px -3px 5px;
+    text-align: center;
+    color: #666666;
+    border: 1px solid #000000;
+    background: #E0E0E0;
+    cursor: pointer;
+    font-family: sans-serif;
+    text-align: center;
+}
+.tabs>input:checked + #rn {
+    color: #000000;
+    border: 1px solid #000000;
+    border-bottom: 1px solid #e6f2ff;
+    background: #e6f2ff;
+}
+.tabs>input:checked + #tm {
+    color: #000000;
+    border: 1px solid #000000;
+    border-bottom: 1px solid #ff9999;
+    background: #ff9999;
+}
+.tabs>input:checked + #sp {
+    color: #000000;
+    border: 1px solid #000000;
+    border-bottom: 1px solid #99ff99;
+    background: #99ff99;
+}
+
+#tab_1:checked ~ #range,
+#tab_2:checked ~ #temperature,
+#tab_3:checked ~ #speed { display: block; }
